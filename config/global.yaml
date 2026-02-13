@@ -1,0 +1,7 @@
+app:
+  name: PipeNota
+  description: Gerenciador de Documentos Fiscais Eletrônicos (DF-e).
+
+runtime:
+  culture: pt-BR
+  timezone: America/Sao_Paulo
