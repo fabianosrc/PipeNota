@@ -1,0 +1,15 @@
+{
+    "PowerShell Standard Script Header": {
+        "scope": "powershell",
+        "prefix": "psheader",
+        "body": [
+            "#Requires -Version 5.1",
+            "",
+            "Set-StrictMode -Version Latest",
+            "$$ErrorActionPreference = 'Stop'",
+            ""
+        ],
+        "include": ["**/*.ps1","**/*.psm1"],
+        "description": "Adds a standard PowerShell script header with #Requires, enables StrictMode, and sets ErrorActionPreference to Stop."
+    }
+}
