@@ -1,0 +1,9 @@
+TOPIC
+    about_PipeNota
+
+SHORT DESCRIPTION
+
+LONG DESCRIPTION
+    
+SEE ALSO
+    https://learn.microsoft.com/pt-br/powershell/scripting/developer/help/writing-help-for-windows-powershell-modules
