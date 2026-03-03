@@ -14,10 +14,6 @@
         [string]$Ie,
 
         [Parameter()]
-        [ValidateSet('Matriz', 'Filial')]
-        [string]$Tipo,
-
-        [Parameter()]
         [ValidateSet('Ativa', 'Inativa')]
         [string]$Situacao,
 
