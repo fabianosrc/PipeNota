@@ -1,4 +1,4 @@
-﻿function Get-PipeNotaApplicationData {
+﻿function Get-PipeNotaAppDataLocation {
     [CmdletBinding()]
     [OutputType([string])]
     param ()
