@@ -2,12 +2,14 @@
     [CmdletBinding(SupportsShouldProcess, ConfirmImpact='Medium')]
     param (
         [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
         [string]$RazaoSocial,
 
         [Parameter()]
         [string]$NomeFantasia,
 
         [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
         [string]$Cnpj,
 
         [Parameter()]
@@ -15,13 +17,7 @@
 
         [Parameter()]
         [ValidateSet('Ativa', 'Inativa')]
-        [string]$Situacao,
-
-        [Parameter()]
-        [string]$DiretorioXmlAutorizados,
-
-        [Parameter()]
-        [string]$DiretorioXmlProcessados,
+        [string]$Situacao = 'Ativa',
 
         [Parameter()]
         [string[]]$EmailPara,
@@ -30,6 +26,29 @@
         [string[]]$EmailCc,
 
         [Parameter()]
-        [string[]]$EmailCco
+        [string[]]$EmailCco,
+
+        [Parameter()]
+        [string]$DirXmlAutorizados,
+
+        [Parameter()]
+        [string]$DirXmlProcessados
     )
+
+    if ($PSCmdlet.ShouldProcess('Empresa', 'Cadastrar')) {
+        $empresa = [PSCustomObject]@{
+            RazaoSocial       = $RazaoSocial
+            NomeFantasia      = $NomeFantasia
+            Cnpj              = $Cnpj
+            Ie                = $Ie
+            Situcao           = $Situacao
+            EmailPara         = $EmailPara
+            EmailCc           = $EmailCc
+            EmailCCo          = $EmailCco
+            DirXmlAutorizados = $DirXmlAutorizados
+            DirXmlProcessados = $DirXmlProcessados
+        }
+
+        return $empresa
+    }
 }
