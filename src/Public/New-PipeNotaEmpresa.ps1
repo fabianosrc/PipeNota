@@ -41,10 +41,10 @@
             NomeFantasia      = $NomeFantasia
             Cnpj              = $Cnpj
             Ie                = $Ie
-            Situcao           = $Situacao
+            Situacao          = $Situacao
             EmailPara         = $EmailPara
             EmailCc           = $EmailCc
-            EmailCCo          = $EmailCco
+            EmailCco          = $EmailCco
             DirXmlAutorizados = $DirXmlAutorizados
             DirXmlProcessados = $DirXmlProcessados
         }
