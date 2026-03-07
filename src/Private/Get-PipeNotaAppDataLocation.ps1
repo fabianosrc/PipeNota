@@ -1,4 +1,7 @@
-﻿<#
+﻿Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
+
+<#
 .SYNOPSIS
 Obtém o caminho da pasta de dados do PipeNota em LocalAppData.
 
@@ -21,7 +24,7 @@ function Get-PipeNotaAppDataLocation {
     $pipeNotaDataPath = [System.IO.Path]::Combine($localAppDataPath, 'PipeNota')
 
     if (-not (Test-Path -LiteralPath $pipeNotaDataPath -PathType Container)) {
-        New-Item -Path $pipeNotaDataPath -ItemType Directory -Force | Out-Null
+        New-Item -Path $pipeNotaDataPath -ItemType Directory -Force -ErrorAction Stop | Out-Null
     }
 
     $pipeNotaDataPath
