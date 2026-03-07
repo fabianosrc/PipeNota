@@ -24,6 +24,5 @@ function Get-PipeNotaAppDataLocation {
         New-Item -Path $pipeNotaDataPath -ItemType Directory -Force | Out-Null
     }
 
-    # Envia a saída para o Pipeline
-    Write-Output $pipeNotaDataPath
+    $pipeNotaDataPath
 }
