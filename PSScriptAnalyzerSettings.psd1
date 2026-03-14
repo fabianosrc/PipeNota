@@ -21,14 +21,13 @@
 
         # Style and consistency
         'PSAlignAssignmentStatement',
-        'PSAvoidMultipleStatementsPerLine'
+        'PSAvoidMultipleStatementsPerLine',
         'PSAvoidTrailingWhitespace',
         'PSAvoidMultipleEmptyLines',
         'PSUseConsistentWhitespace',
         'PSAvoidInlineComments',
         'PSUseCorrectCasing',
         'PSUseSingularNouns',
-        'PSUseApprovedVerbs',
         'PSPipelineIndentation',
         'PSHashTableFormatting'
     )
