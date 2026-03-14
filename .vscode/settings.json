@@ -7,7 +7,7 @@
 
     "[powershell]": {
         "editor.defaultFormatter": "ms-vscode.powershell",
-        "editor.semanticHighlighting.enabled": true,
+        "editor.semanticHighlighting.enabled": false,
         "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
         "files.autoSave": "onFocusChange",
         "files.encoding": "utf8bom"
