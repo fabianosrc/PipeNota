@@ -1,0 +1,26 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+
+    "files.insertFinalNewline": true,
+
+    "[powershell]": {
+        "editor.defaultFormatter": "ms-vscode.powershell",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+        "files.autoSave": "onFocusChange",
+        "files.encoding": "utf8bom"
+    },
+
+    "powershell.codeFormatting.preset": "OTBS",
+    "powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
+    "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
+    "powershell.codeFormatting.whitespaceAroundOperator": true,
+    "powershell.codeFormatting.whitespaceAfterSeparator": true,
+    "powershell.codeFormatting.alignPropertyValuePairs": true,
+    "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.promptToUpdatePowerShell": false,
+}
