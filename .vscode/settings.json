@@ -23,4 +23,7 @@
 
     "powershell.integratedConsole.showOnStartup": false,
     "powershell.promptToUpdatePowerShell": false,
+
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.scriptAnalysis.settingsPath": ".\\PSScriptAnalyzerSettings.psd1",
 }
