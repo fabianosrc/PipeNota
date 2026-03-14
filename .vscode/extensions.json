@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "usernamehw.errorlens",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.powershell",
+        "vscode-icons-team.vscode-icons",
+    ]
+}
